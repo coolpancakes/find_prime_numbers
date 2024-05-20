@@ -39,6 +39,7 @@ def main():
             solution.remove(numvii)
 
     solution.insert(3, 7)
+    solution.insert(4, 5)
 
     for numbers in solution:
         if numbers == -1:
