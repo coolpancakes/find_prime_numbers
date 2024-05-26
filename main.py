@@ -1,53 +1,56 @@
-# Program that finds all the prime numbers in the range 0, 100
+# finds all prime numbers within the range 0, 100.
 
 def main():
-    solution = []
+    number_range = []
+    for nrange in range(100):
+        number_range.append(nrange)
 
-    for mainrange in range(51):
-        multiple2 = mainrange * 2 - 1
-        solution.append(multiple2)
-        if mainrange == 500:
-            break
+    ii = []
+
+    for prime2 in range(1001):
+        ii.append(prime2 * 2)
 
     iii = []
 
-    for multiple3 in range(334):
-        iii.append(multiple3 * 3)
+    for prime3 in range(1001):
+        iii.append(prime3 * 3)
 
     v = []
 
-    for multiple5 in range(200):
-        iii.append(multiple5 * 5)
+    for prime5 in range(1001):
+        v.append(prime5 * 5)
 
     vii = []
 
-    for multiple7 in range(170):
-        vii.append(multiple7 * 7)
+    for prime7 in range(1001):
+        vii.append(prime7 * 7)
 
-    for numsiii in iii:
-        if numsiii in solution:
-            solution.remove(numsiii)
+    for two in ii:
+        if two in number_range:
+            number_range.remove(two)
 
-    solution.insert(2, 3)
+    for three in iii:
+        if three in number_range:
+            number_range.remove(three)
 
-    for numsv in v:
-        if numsv in solution:
-            solution.remove(numsv)
+    for five in v:
+        if five in number_range:
+            number_range.remove(five)
 
-    for numvii in vii:
-        if numvii in solution:
-            solution.remove(numvii)
+    for seven in vii:
+        if seven in number_range:
+            number_range.remove(seven)
 
-    solution.insert(3, 7)
-    solution.insert(4, 5)
+    number_range.remove(1)
+    number_range.insert(0, 2)
+    number_range.insert(1, 3)
+    number_range.insert(2, 5)
+    number_range.insert(3, 7)
 
-    for numbers in solution:
-        if numbers == -1:
-            pass
-        else:
-            print(numbers)
-    print(f"Length is:", len(solution))
+    for prime_numbers in number_range:
+        print(prime_numbers)
 
+    print("\nThere are {} prime numbers in the range 0, 100!".format(len(number_range)))
 
 if __name__ == "__main__":
     main()
