@@ -1,2 +1,2 @@
 # find_prime_numbers
-This algorithm is a python implementation of the Sieve of Eratosthenes which is a greek algorithm used for finding prime numbers. This algorithm finds all prime numbers within the range 0 to 100. 
+This algorithm is a python implementation of the Sieve of Eratosthenes which is a greek algorithm used for finding prime numbers. This algorithm works in laymans by simply appending a range of 0,100 to a list and iterating through that list to remove multiples of 2, 3, 5 and 7. For a more advanced explanation to how to the Seive works and the different types of sieves you can implement please refer to https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes  
